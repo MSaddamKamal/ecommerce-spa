@@ -5,9 +5,9 @@ const ITEM_PURCHASED = 'item_purchased'
 const USER_REGISTERED = 'user_registered'
 
 export {
-    ITEM_VIEWED ,
-    ITEM_ADDED ,
-    ITEM_PURCHASED ,
-    USER_REGISTERED 
+    ITEM_VIEWED,
+    ITEM_ADDED,
+    ITEM_PURCHASED,
+    USER_REGISTERED
 }
 

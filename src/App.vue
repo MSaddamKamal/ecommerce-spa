@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Alert />
     <router-view />
     <PageLoader />
   </div>
