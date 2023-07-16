@@ -1,12 +1,14 @@
 import axios from '../config/request/axios-config.js';
-
+import store from '../store/index.js';
 
 export const globalMixin = {
-    methods: {
 
+    methods: {
+        // global request maker
         async makeRequest(requestType = 'get', url, data = {}, options) {
           
-          
+            // set loader
+            if (options.loader)  store.dispatch('common/setPageLoader',options.loader)
 
             let responseFormat = {}
             let requestObj = null;
@@ -39,20 +41,25 @@ export const globalMixin = {
                 responseFormat.error = false;
                 responseFormat.response = callResponse;
                 let success = callResponse.data.success
+
                 if (success) {
-                    
+                    store.dispatch('common/setShowAlert',{error:false,msg:callResponse.data.message})
+                    setTimeout(()=>store.dispatch('common/setShowAlert',false),2000)
+
                 }else{
                     responseFormat.error = true;
-                    
                 }
 
             }).catch(error => {
-             
+           
+                let msg = error?.response?.data?.message ?? 'Error! Something Went Wrong'
+                store.dispatch('common/setShowAlert',{error:true,msg:msg})
+                setTimeout(()=>store.dispatch('common/setShowAlert',false),2000)
                 responseFormat.error = true;
                 responseFormat.response = error;
 
             }).finally(() => {
-                
+                store.dispatch('common/setPageLoader',false)
             });
 
 
