@@ -1,0 +1,29 @@
+{
+  "name": "social-spa",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@vee-validate/rules": "^4.0.4",
+    "axios": "^1.4.0",
+    "v-pagination-3": "^0.1.7",
+    "vee-validate": "^4.10.6",
+    "vue": "^3.0.4",
+    "vue-router": "^4.2.4",
+    "vuex": "^4.0.2",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.9",
+    "@vue/compiler-sfc": "^3.0.4",
+    "@vue/test-utils": "^2.4.0",
+    "jest-environment-jsdom": "^29.6.1",
+    "babel-jest": "^29.6.1",
+    "@vue/vue3-jest": "^29.2.4",
+    "jest": "^29.6.1",
+    "vite": "^1.0.0-rc.13"
+  }
+}
