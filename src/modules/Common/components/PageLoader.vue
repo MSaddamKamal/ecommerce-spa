@@ -16,8 +16,8 @@
 <script>
 import { mapState } from 'vuex';
 export default {
-    computed:{
-        ...mapState('common',['pageLoader'],)
+    computed: {
+        ...mapState('common', ['pageLoader'],)
     }
 }
 </script>
