@@ -6,7 +6,7 @@ export default {
     async logStat(context, payload) {
 
         let url = 'api/analytics'
-        let user = JSON.parse(this.state.auth.user)
+        let user = this.state.auth.user
         if (user) {
             return await globalMixin.methods.makeRequest('post', url, payload.body, payload.options)
                 .then(res => {

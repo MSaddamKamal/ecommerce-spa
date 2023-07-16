@@ -61,7 +61,7 @@ export default {
         },
         options: {
           loader: true,
-          hideSuccessMsg: true
+          hideSuccessMsg: true,
         },
       }).then((res) => {
         if (res && !res?.error) {
