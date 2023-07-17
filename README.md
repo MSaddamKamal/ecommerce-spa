@@ -3,8 +3,13 @@
 
 # Ecommerce SPA
 
-
 Ecommerce SPA is a simple implementation of cart process in any `Ecommerce Store` with guest checkout enabled. The project is built on `Vue.js(FrontEnd SPA)`.
+
+## Demo
+![Demo2](https://raw.githubusercontent.com/MSaddamKamal/wireMedia/main/ecom.gif)
+
+## Demo
+![Demo1](https://raw.githubusercontent.com/MSaddamKamal/wireMedia/main/ecom1.JPG)
 
 ## Technology Stack
 It is built on Vue.js, accompanied with beautiful UI using Bulma CSS. 
